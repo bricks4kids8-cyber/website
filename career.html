@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Career — John Peter Smith</title>
+  <meta name="description" content="Career page for community leader John Peter Smith (1800s)." />
+  <meta name="robots" content="index,follow" />
+
+  <meta property="og:title" content="Career — John Peter Smith">
+  <meta property="og:description" content="Educational site for a 19th-century community leader." />
+  <meta name="theme-color" content="#0f172a" />
+
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+
+<body>
+<a href="#main" class="skip">Skip to main content</a>
+
+<header role="banner">
+  <div class="container nav" aria-label="Primary">
+    <a class="brand" href="index.html#top">
+      <span class="brand-logo" aria-hidden="true">JS</span>
+      <span class="brand-name">John Peter Smith</span>
+    </a>
+
+    <button
+      class="menu-btn"
+      aria-controls="menu"
+      aria-expanded="false"
+      id="menuButton">
+      Menu
+    </button>
+
+    <ul id="menu" role="navigation" aria-label="Main">
+      <li><a class="navlink" href="index.html#top">Home</a></li>
+      <li><a class="navlink" href="early-life.html">Early Life</a></li>
+      <li><a class="navlink" href="education.html">Education</a></li>
+      <li><a class="navlink" href="family.html">Family</a></li>
+      <li><a class="navlink active" href="career.html">Career</a></li>
+      <li><a class="navlink" href="contributions.html">Contributions</a></li>
+      <li><a class="navlink" href="awards.html">Awards</a></li>
+      <li><a class="navlink" href="connections.html">Connections</a></li>
+      <li><a class="navlink" href="philanthropy.html">Philanthropy</a></li>
+      <li><a class="navlink" href="timeline.html">Timeline</a></li>
+      <li><a class="navlink" href="works-cited.html">Works Cited</a></li>
+    </ul>
+  </div>
+</header>
+
+<main id="main" class="container" role="main">
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="index.html">Home</a> › Career
+  </nav>
+
+  <section class="section">
+    <h2>Career</h2>
+
+    <p>
+      John Peter Smith began his career in Fort Worth as a teacher and lawyer,
+      but quickly expanded into business and civic leadership. In 1853, he
+      purchased land that later became central to the development of downtown
+      Fort Worth. He emerged as one of the city’s most active real estate
+      investors, donating land for schools, churches, and parks to shape the
+      growing community.
+    </p>
+
+    <p>
+      Smith entered politics as Fort Worth’s mayor, serving multiple terms
+      between the 1880s and 1890s. During his time in office, he focused on
+      improving public infrastructure, expanding the school system, and
+      advocating for better public health services. He played a major role
+      in establishing permanent schools and supported education for both
+      boys and girls.
+    </p>
+
+    <p>
+      His most lasting contribution came in healthcare. Smith donated land
+      and funds that helped establish the John Peter Smith Hospital, a
+      cornerstone of public health in Tarrant County. This act ensured that
+      underserved residents could access affordable medical care.
+    </p>
+
+    <p>
+      Beyond politics and philanthropy, Smith served as a trustee for several
+      educational and civic institutions. His combined work as a businessman,
+      public servant, and benefactor earned him recognition as the
+      “Father of Fort Worth Schools” and a pioneer of community healthcare
+      in North Texas.
+    </p>
+  </section>
+</main>
+
+<footer role="contentinfo">
+  <div class="container">
+    <p class="small">
+       2025-2026 Educational site about John Peter Smith
+      BPA Website Design Team.
+    </p>
+  </div>
+</footer>
+
+<!-- Menu JS -->
+<script>
+  const btn = document.getElementById('menuButton');
+  const menu = document.getElementById('menu');
+
+  if (btn && menu) {
+    btn.addEventListener('click', () => {
+      const open = menu.classList.toggle('open');
+      btn.setAttribute('aria-expanded', String(open));
+    });
+  }
+</script>
+
+<script src="transition.js"></script>
+
+<!-- Site Assistant -->
+<div id="assistant">
+  <button id="assistant-toggle" aria-label="Open assistant">💬</button>
+
+  <div id="assistant-box">
+    <div id="assistant-messages">
+      <div class="bot">
+        Hello! 👋 Ask a question about John Peter Smith or this website.
+      </div>
+    </div>
+    <input
+      id="assistant-input"
+      type="text"
+      placeholder="Ask about career, awards, contributions..."
+    />
+  </div>
+</div>
+
+<!-- Assistant JS (MUST BE LAST) -->
+<script src="assistant.js"></script>
+
+</body>
+</html>
