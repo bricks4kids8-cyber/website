@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Works Cited — John Peter Smith</title>
+  <meta name="description" content="Works Cited page for community leader John Peter Smith (1800s)." />
+  <meta name="robots" content="index,follow" />
+  <meta property="og:title" content="Works Cited — John Peter Smith">
+  <meta property="og:description" content="Educational site for a 19th‑century community leader." />
+  <meta name="theme-color" content="#0f172a" />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+<a href="#main" class="skip">Skip to main content</a>
+
+<header role="banner">
+  <div class="container nav" aria-label="Primary">
+    <a class="brand" href="index.html#top"><span class="brand-logo" aria-hidden="true">JS</span><span class="brand-name">John Peter Smith</span></a>
+    <button class="menu-btn" aria-controls="menu" aria-expanded="false" id="menuButton">Menu</button>
+    <ul id="menu" role="navigation" aria-label="Main">
+      <li><a class="navlink active" href="index.html#top">Home</a></li>
+      <li><a class="navlink" href="early-life.html">Early Life</a></li>
+      <li><a class="navlink" href="education.html">Education</a></li>
+      <li><a class="navlink" href="family.html">Family</a></li>
+      <li><a class="navlink" href="career.html">Career</a></li>
+      <li><a class="navlink" href="contributions.html">Contributions</a></li>
+      <li><a class="navlink" href="awards.html">Awards</a></li>
+      <li><a class="navlink" href="connections.html">Connections</a></li>
+      <li><a class="navlink" href="philanthropy.html">Philanthropy</a></li>
+      <li><a class="navlink" href="timeline.html">Timeline</a></li>
+      <li><a class="navlink" href="works-cited.html">Works Cited</a></li>
+    </ul>
+  </div>
+</header>
+
+<main id="main" class="container" role="main">
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="index.html">Home</a> › Works Cited
+  </nav>
+
+  <section class="section">
+    <h2>Works Cited</h2>
+    <ul>
+      <li>Texas State Historical Association. "Smith, John Peter." <em>Handbook of Texas Online</em>. Accessed September 2025. <a href="https://www.tshaonline.org/handbook/entries/smith-john-peter" target="_blank">https://www.tshaonline.org/handbook/entries/smith-john-peter</a></li>
+
+      <li>“John Peter Smith (Texas Politician).” <em>Wikipedia</em>. Last modified August 2025. <a href="https://en.wikipedia.org/wiki/John_Peter_Smith_(Texas_politician)" target="_blank">https://en.wikipedia.org/wiki/John_Peter_Smith_(Texas_politician)</a></li>
+
+      <li>Historic Fort Worth, Inc. “John Peter Smith Memorial, Jennings Ave. and Throckmorton.” Accessed September 2025. <a href="https://historicfortworth.org/property/john-peter-smith-memorial-jennings-ave-and-throckmorton/" target="_blank">https://historicfortworth.org/property/john-peter-smith-memorial-jennings-ave-and-throckmorton/</a></li>
+
+      <li>John Peter Smith Health Network. “About Us.” Accessed September 2025. <a href="https://www.jpshealthnet.org/" target="_blank">https://www.jpshealthnet.org/</a></li>
+
+      <li>WikiTree Contributors. “John Peter Smith (1831–1901).” <em>WikiTree</em>. Accessed September 2025. <a href="https://www.wikitree.com/wiki/Smith-103606" target="_blank">https://www.wikitree.com/wiki/Smith-103606</a></li>
+
+      <li>Historical Marker Project. “John Peter Smith.” Accessed September 2025. <a href="https://historicalmarkerproject.com/markers/HMZGE_john-peter-smith_Fort-Worth-TX.html" target="_blank">https://historicalmarkerproject.com/markers/HMZGE_john-peter-smith_Fort-Worth-TX.html</a></li>
+    </ul>
+  </section>
+</main>
+
+<footer role="contentinfo">
+  <div class="container">
+    <p class="small"> 2025-2026 Educational site about John Peter Smith. BPA Website Design Team.</p>
+  </div>
+</footer>
+
+<script>
+  const btn = document.getElementById('menuButton');
+  const menu = document.getElementById('menu');
+  if (btn && menu) {
+    btn.addEventListener('click', () => {
+      const open = menu.classList.toggle('open');
+      btn.setAttribute('aria-expanded', String(open));
+    });
+  }
+</script>
+
+<!-- ✅ Only one Site Assistant -->
+<div id="assistant">
+  <button id="assistant-toggle" aria-label="Open assistant">💬</button>
+  <div id="assistant-box">
+    <div id="assistant-messages">
+      <div class="bot">Hello! 👋 Ask a question about John Peter Smith or this website.</div>
+    </div>
+    <input id="assistant-input" type="text" placeholder="Ask about career, awards, contributions..." />
+  </div>
+</div>
+
+<script src="assistant.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Home — John Peter Smith</title>
+  <meta name="description" content="Home page for community leader John Peter Smith (1800s)." />
+  <meta name="robots" content="index,follow" />
+
+  <meta property="og:title" content="Home — John Peter Smith">
+  <meta property="og:description" content="Educational site for a 19th-century community leader." />
+  <meta name="theme-color" content="#0f172a" />
+
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+
+<body>
+<a href="#main" class="skip">Skip to main content</a>
+
+<header role="banner">
+  <div class="container nav" aria-label="Primary">
+    <a class="brand" href="index.html#top">
+      <span class="brand-logo" aria-hidden="true">JS</span>
+      <span class="brand-name">John Peter Smith</span>
+    </a>
+
+    <button
+      class="menu-btn"
+      aria-controls="menu"
+      aria-expanded="false"
+      id="menuButton">
+      Menu
+    </button>
+
+    <ul id="menu" role="navigation" aria-label="Main">
+      <li><a class="navlink active" href="index.html#top">Home</a></li>
+      <li><a class="navlink" href="early-life.html">Early Life</a></li>
+      <li><a class="navlink" href="education.html">Education</a></li>
+      <li><a class="navlink" href="family.html">Family</a></li>
+      <li><a class="navlink" href="career.html">Career</a></li>
+      <li><a class="navlink" href="contributions.html">Contributions</a></li>
+      <li><a class="navlink" href="awards.html">Awards</a></li>
+      <li><a class="navlink" href="connections.html">Connections</a></li>
+      <li><a class="navlink" href="philanthropy.html">Philanthropy</a></li>
+      <li><a class="navlink" href="timeline.html">Timeline</a></li>
+      <li><a class="navlink" href="works-cited.html">Works Cited</a></li>
+    </ul>
+  </div>
+</header>
+
+<main id="main" class="container" role="main">
+  <section class="hero" id="top">
+    <div class="hero-grid">
+      <div>
+        <a href="https://bpa.org" target="_blank">
+          <img
+            src="assets/images/bpa-logo.png"
+            alt="Business Professionals of America Logo"
+            style="max-width:180px; margin-bottom:1rem;">
+        </a>
+
+        <div class="kicker">Community Hero</div>
+        <h1>John Peter Smith</h1>
+        <p class="lead">
+          Mayor, veteran, philanthropist, and community leader.
+        </p>
+
+        <div class="cta-row">
+          <a class="btn" href="contributions.html">Significant Contributions</a>
+          <a class="btn alt" href="works-cited.html">Works Cited</a>
+        </div>
+      </div>
+
+      <div class="media">
+        <img
+          src="assets/images/bpajps.avif"
+          alt="Portrait of John Peter Smith"
+          style="max-width:100%; border-radius:8px; display:block; margin:auto;">
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Explore the Biography</h2>
+
+    <div class="grid-3">
+      <a class="card" href="awards.html">
+        <h3>Awards</h3>
+        <p>Elected mayor of Fort Worth for six terms with many honors.</p>
+      </a>
+
+      <a class="card" href="career.html">
+        <h3>Career</h3>
+        <p>From mayor to civic visionary shaping Fort Worth.</p>
+      </a>
+
+      <a class="card" href="contributions.html">
+        <h3>Contributions</h3>
+        <p>Donated land and resources, including JPS Hospital.</p>
+      </a>
+    </div>
+  </section>
+</main>
+
+<footer role="contentinfo">
+  <div class="container">
+    <p class="small">
+        2025-2026 Educational site about John Peter Smith
+        BPA Website Design Team.
+    </p>
+    <p class="small">
+    </p>
+  </div>
+</footer>
+
+<!-- Menu toggle -->
+<script>
+  const btn = document.getElementById('menuButton');
+  const menu = document.getElementById('menu');
+
+  if (btn && menu) {
+    btn.addEventListener('click', () => {
+      const open = menu.classList.toggle('open');
+      btn.setAttribute('aria-expanded', String(open));
+    });
+  }
+</script>
+
+<!-- Page transition -->
+<script src="transition.js"></script>
+
+<!-- Site Assistant (ONE instance only) -->
+<div id="assistant">
+  <button id="assistant-toggle" aria-label="Open assistant">💬</button>
+
+  <div id="assistant-box">
+    <div id="assistant-messages">
+      <div class="bot">
+        Hello! 👋 Ask a question about John Peter Smith or this website.
+      </div>
+    </div>
+    <input
+      id="assistant-input"
+      type="text"
+      placeholder="Ask about career, awards, contributions..."
+    />
+  </div>
+</div>
+
+<!-- Assistant JS MUST be last -->
+<script src="assistant.js"></script>
+
+</body>
+</html>
