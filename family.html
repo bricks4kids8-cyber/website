@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Family — John Peter Smith</title>
+  <meta name="description" content="Family page for community leader John Peter Smith (1800s)." />
+  <meta name="robots" content="index,follow" />
+
+  <meta property="og:title" content="Family — John Peter Smith">
+  <meta property="og:description" content="Educational site for a 19th-century community leader." />
+  <meta name="theme-color" content="#0f172a" />
+
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+
+<body>
+<a href="#main" class="skip">Skip to main content</a>
+
+<header role="banner">
+  <div class="container nav" aria-label="Primary">
+    <a class="brand" href="index.html#top">
+      <span class="brand-logo" aria-hidden="true">JS</span>
+      <span class="brand-name">John Peter Smith</span>
+    </a>
+
+    <button
+      class="menu-btn"
+      aria-controls="menu"
+      aria-expanded="false"
+      id="menuButton">
+      Menu
+    </button>
+
+    <ul id="menu" role="navigation" aria-label="Main">
+      <li><a class="navlink" href="index.html#top">Home</a></li>
+      <li><a class="navlink" href="early-life.html">Early Life</a></li>
+      <li><a class="navlink" href="education.html">Education</a></li>
+      <li><a class="navlink active" href="family.html">Family</a></li>
+      <li><a class="navlink" href="career.html">Career</a></li>
+      <li><a class="navlink" href="contributions.html">Contributions</a></li>
+      <li><a class="navlink" href="awards.html">Awards</a></li>
+      <li><a class="navlink" href="connections.html">Connections</a></li>
+      <li><a class="navlink" href="philanthropy.html">Philanthropy</a></li>
+      <li><a class="navlink" href="timeline.html">Timeline</a></li>
+      <li><a class="navlink" href="works-cited.html">Works Cited</a></li>
+    </ul>
+  </div>
+</header>
+
+<main id="main" class="container" role="main">
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="index.html">Home</a> › Family
+  </nav>
+
+  <section class="section">
+    <h2>Family</h2>
+
+    <p>
+      John Peter Smith was born on September 16, 1831, in Owen County,
+      Kentucky, to Samuel and Polly (Bond) Smith. In 1844, when he was just
+      thirteen years old, both of his parents passed away near Hartford,
+      Connecticut, leaving him orphaned along with his five siblings. He
+      was placed under the guardianship of his cousin, W. H. Garnett.
+    </p>
+
+    <p>
+      As a teenager, Smith received a strong public education. He later
+      attended Franklin College in Indiana and, in 1850, began his studies
+      at Bethany College in West Virginia. He graduated in July 1853 with
+      first honors in mathematics and ancient languages.
+    </p>
+
+    <p>
+      Just months after graduation, Smith moved to Fort Worth, Texas. In
+      January 1854, he transformed an abandoned army hospital into Fort
+      Worth’s first school. Although poor health limited his ability to
+      teach beyond a few months, the institution evolved into the city’s
+      Male and Female Academy, Fort Worth’s first permanent educational
+      facility.
+    </p>
+  </section>
+</main>
+
+<footer role="contentinfo">
+  <div class="container">
+    <p class="small">
+       2025-2026 Educational site about John Peter Smith
+      BPA Website Design Team.
+    </p>
+    <p class="small">
+    </p>
+  </div>
+</footer>
+
+<!-- Menu JS -->
+<script>
+  const btn = document.getElementById('menuButton');
+  const menu = document.getElementById('menu');
+
+  if (btn && menu) {
+    btn.addEventListener('click', () => {
+      const open = menu.classList.toggle('open');
+      btn.setAttribute('aria-expanded', String(open));
+    });
+  }
+</script>
+
+<script src="transition.js"></script>
+
+<!-- Site Assistant -->
+<div id="assistant">
+  <button id="assistant-toggle" aria-label="Open assistant">💬</button>
+
+  <div id="assistant-box">
+    <div id="assistant-messages">
+      <div class="bot">
+        Hello! 👋 Ask a question about John Peter Smith or this website.
+      </div>
+    </div>
+    <input
+      id="assistant-input"
+      type="text"
+      placeholder="Ask about family, early life, education..."
+    />
+  </div>
+</div>
+
+<!-- Assistant JS (MUST BE LAST) -->
+<script src="assistant.js"></script>
+
+</body>
+</html>
+
